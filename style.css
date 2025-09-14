@@ -96,25 +96,25 @@ nav {
 }
 
 .btn.light {
-  background: #fff; /* Latar putih */
-  border: 2px solid #333; /* Border abu gelap */
-  color: #333; /* Teks abu gelap */
+  background: #fff;                        /* Latar putih */
+  border: 2px solid #333;                  /* Border abu gelap */
+  color: #333;                             /* Teks abu gelap */
 }
 
 .btn.light:hover {
-  background: #333; /* Saat hover latar hitam */
-  color: #fff; /* Teks putih */
+  background: #333;                     /* Saat hover latar hitam */
+  color: #fff;                          /* Teks putih */
 }
 
 .btn.dark {
-  background: #333; /* Latar hitam */
-  color: #fff; /* Teks putih */
+  background: #333;                     /* Latar hitam */
+  color: #fff;                          /* Teks putih */
 }
 
 .btn.dark:hover {
-  background: transparent; /* Hover: latar transparan */
-  border: 2px solid #333; /* Border hitam */
-  color: #333; /* Teks hitam */
+  background: transparent;                /* Hover: latar transparan */
+  border: 2px solid #333;               /* Border hitam */
+  color: #333;                          /* Teks hitam */
 }
 
 /*  Social Links */
@@ -132,7 +132,7 @@ nav {
 
 /*  Responsive  */
 @media (max-width: 884px) { /* Aturan khusus layar kecil (tablet/HP) */
-  .hero {
+  .bio {
     flex-direction: column; /* Elemen disusun vertikal */
     text-align: center; /* Teks rata tengah */
   }
