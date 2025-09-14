@@ -1,0 +1,148 @@
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset default margin, padding, dan atur box-sizing */
+* {
+  margin: 0;                                /* Menghapus margin default */
+  padding: 0;                               /* Menghapus padding default */
+  box-sizing: border-box;                   /* Lebar/tinggi elemen termasuk padding + border */
+  font-family: "Poppins", sans-serif;       /* Semua teks pakai font Poppins */
+}
+
+/* Atur style global body */
+body {
+  background: #fff;                       /* Latar belakang putih */
+  color: #333;                            /* Warna teks abu tua */
+}
+
+/* Navbar*/
+nav {
+  width: 100%;                              /* Navbar penuh 1 layar */
+  padding: 20px 50px;                       /* Jarak dalam atas-bawah 20px, kiri-kanan 50px */
+  background: #fff;                       /* Warna latar putih */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Bayangan lembut bawah navbar */
+  display: flex;                            /* Menggunakan flexbox */
+  justify-content: flex-start;              /* Isi navbar rata kiri */
+  align-items: center;                      /* Isi navbar rata tengah vertikal */
+}
+
+.logo { 
+  font-size: 1.5rem;                        /* Ukuran font lebih besar */
+  font-weight: 600;                         /* Tebal semi-bold */
+  color: #222;                            /* Warna teks abu sangat gelap */
+}
+
+/*bio Section*/
+.bio {
+  display: flex;                            /* Elemen dalam disusun fleksibel sejajar */
+  justify-content: center;                  /* Isi rata tengah horizontal */
+  align-items: center;                      /* Isi rata tengah vertikal */
+  padding: 60px 10%;                        /* Jarak dalam: 60px atas-bawah, 10% kiri-kanan */
+  gap: 60px;                                /* Jarak antar elemen horizontal */
+}
+
+.profile-image img {
+  width: 250px;                             /* Lebar gambar 250px */
+  height: 250px;                            /* Tinggi gambar 250px */
+  object-fit: cover;                        /* Gambar menyesuaikan kotak tanpa distorsi */
+  border-radius: 50%;                       /* Membuat gambar jadi bulat */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* Bayangan lembut di sekitar gambar */
+}
+
+.profile-content {
+  max-width: 500px;                          /* Lebar maksimal teks 500px agar rapi */
+}
+
+.intro {
+  font-size: 1rem;                          /* Ukuran teks normal */
+  color: #555;                            /* Warna abu sedang */
+  margin-bottom: 8px;                       /* Jarak bawah 8px */
+}
+
+.profile-content h1 {
+  font-size: 2.5rem;                        /* Ukuran font besar */
+  font-weight: 700;                         /* Tebal bold */
+  color: #111;                            /* Warna hampir hitam */
+}
+
+.profile-content h2 {
+  font-size: 1.2rem;                        /* Ukuran teks sedang */
+  font-weight: 500;                         /* Tebal medium */
+  color: #666;                            /* Warna abu agak gelap */
+  margin: 10px 0 20px;                      /* Jarak atas 10px, bawah 20px */
+}
+
+.profile-content .desc {
+  font-size: 1rem;                          /* Ukuran teks normal */
+  line-height: 1.6;                         /* Jarak antar baris 1.6x font-size */
+  margin-bottom: 25px;                      /* Jarak bawah 25px */
+  color: #555;                            /* Warna abu sedang */
+}
+
+/* Buttons */
+.buttons {
+  display: flex;                            /* Tombol ditata horizontal */
+  gap: 15px;                                /* Jarak antar tombol */
+  margin-bottom: 25px;                      /* Jarak bawah 25px */
+}
+
+.btn {
+  padding: 10px 20px;                       /* Jarak dalam tombol */
+  border-radius: 25px;                      /* Membuat tombol oval */
+  font-weight: 500;                         /* Teks medium */
+  text-decoration: none;                    /* Hilangkan garis bawah link */
+  transition: all 0.3s ease;                /* Animasi halus saat hover */
+  border: 2px solid transparent;            /* Border default transparan */
+}
+
+.btn.light {
+  background: #fff; /* Latar putih */
+  border: 2px solid #333; /* Border abu gelap */
+  color: #333; /* Teks abu gelap */
+}
+
+.btn.light:hover {
+  background: #333; /* Saat hover latar hitam */
+  color: #fff; /* Teks putih */
+}
+
+.btn.dark {
+  background: #333; /* Latar hitam */
+  color: #fff; /* Teks putih */
+}
+
+.btn.dark:hover {
+  background: transparent; /* Hover: latar transparan */
+  border: 2px solid #333; /* Border hitam */
+  color: #333; /* Teks hitam */
+}
+
+/*  Social Links */
+.social-links a {
+  margin-right: 15px; /* Jarak kanan antar ikon */
+  font-size: 1.4rem; /* Ukuran ikon */
+  color: #333; /* Warna ikon abu gelap */
+  transition: all 0.3s ease; /* Animasi halus saat hover */
+}
+
+.social-links a:hover {
+  color: #6d4300; /* Hover: warna coklat */
+  transform: scale(1.2); /* Ikon membesar sedikit */
+}
+
+/*  Responsive  */
+@media (max-width: 884px) { /* Aturan khusus layar kecil (tablet/HP) */
+  .hero {
+    flex-direction: column; /* Elemen disusun vertikal */
+    text-align: center; /* Teks rata tengah */
+  }
+
+  .profile-image img {
+    width: 180px; /* Gambar lebih kecil */
+    height: 180px; /* Tinggi menyesuaikan */
+  }
+
+  .buttons {
+    justify-content: center; /* Tombol diratakan tengah */
+  }
+}
